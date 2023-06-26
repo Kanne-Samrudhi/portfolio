@@ -1,0 +1,649 @@
+/* Index 
+1 - General styles
+2 - profile section
+    2.1 - background
+    2.2 - images
+    2.3 - social button
+    2.4 - text changing animation
+    2.4 - grid template
+3 - professional section
+4 - experience
+5 - education
+6 - contact information 
+7 - footer - social button
+8 - media query
+    8.1 - max-width: 768px
+    8.2 - max-width:991px
+    8.3 - min-width: 768px
+    8.4 - min-width:991px
+9 - digital badge
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Sacramento&display=swap');
+
+:root {
+    --text         : #EAEAE0;
+    --default-color: #378c3f;
+    --design       : #9861e2;
+    --dviolet      : #4c23b7;
+    --btn-bg       : #1DC690;
+    --btn-bg-d     : #18a176;
+    --cut-out      : #18a176;
+    --heading-text : #265B8B;
+    --heading      : #0B1C48;
+    --sub-heading  : #1dc690;
+}
+
+/* 1. general styles */
+body {
+    color                  : #0B1C48;
+    font-size              : 14px;
+    font-family            : "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing : antialiased;
+    background-image       : url(../images/Scattered-Forcefields.svg);
+}
+
+.main {
+    position  : relative;
+    background: var(--text);
+}
+
+hr {
+    border       : 6px dotted var(--design);
+    border-bottom: none;
+    width        : 4%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    font-family: 'Sacramento', 'cursive';
+}
+
+.title,
+.heading {
+    font-weight: 700;
+}
+
+.title {
+    color: var(--heading-text);
+}
+
+.heading {
+    color: var(--dviolet);
+}
+
+.page-header-image {
+    background-image: url('../images/bgradient.svg');
+}
+
+.cc-profile-image img {
+    object-fit: cover;
+}
+
+.press-image {
+    width: 80%;
+}
+
+.bold-text {
+    font-weight: 600;
+    color      : var(--sub-heading);
+}
+
+a.bold-text {
+    margin-top: 30px;
+}
+
+/* 2. Body */
+/* 2.1 Profile Page Background Style */
+.page-header {
+    background: rgba(44, 44, 44, 0.2);
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+}
+
+.page-header .btn {
+    width: 140px;
+}
+
+/* 2.2 Profile Image Style */
+@-webkit-keyframes pulsate {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity  : 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity  : 0.0;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity  : 0.0;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity  : 0.0;
+    }
+}
+
+.cc-profile-image a {
+    position: relative;
+}
+
+.cc-profile-image a:before {
+    content                          : "";
+    border                           : 15px solid rgb(29, 198, 144);
+    border-radius                    : 50%;
+    height                           : 180px;
+    width                            : 180px;
+    position                         : absolute;
+    left                             : 0;
+    -webkit-animation                : pulsate 1.6s ease-out;
+    animation                        : pulsate 1.6s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count        : infinite;
+    opacity                          : 0.0;
+    z-index                          : 99;
+}
+
+.cc-profile-image img {
+    position     : relative;
+    border-radius: 50%;
+    height       : 180px;
+    width        : 180px;
+    padding      : 0;
+    margin       : 0;
+    border       : 15px solid transparent;
+    z-index      : 9999;
+    transition   : all .3s ease-out;
+}
+
+.cc-profile-image a:hover img {
+    transform: scale(1.06, 1.06);
+}
+
+.fa-vimeo {
+    font-size  : 2rem;
+    padding-top: 1rem;
+}
+
+/* 2.3 Profile Page Social button Style */
+
+.btn-bg {
+    background-color: var(--btn-bg);
+    color           : #0B1C48;
+    font-weight     : 600;
+    margin-right    : 1rem;
+}
+
+.btn-bg:hover {
+    background-color: var(--btn-bg-d);
+}
+
+span.btn-bg {
+    margin: 0;
+}
+
+/* 2.4 text changing animation */
+
+.h1-text {
+    font-family: 'Sacramento', 'cursive';
+    font-size  : 4.5rem;
+    margin     : 1rem 0;
+}
+
+#programmer {
+    font-size  : 3rem;
+    font-style : italic;
+    font-weight: normal;
+    line-height: 2rem;
+}
+
+.pro {
+    text-decoration: underline;
+    color          : var(--btn-bg);
+}
+
+/* .h2-text {
+    text-transform: uppercase;
+    color         : var(--text);
+    font-family   : verdana;
+    margin        : .5rem 0;
+}
+
+.div-content {
+    display : inline-flex;
+    height  : 2rem;
+    overflow: hidden;
+    color   : var(--design);
+}
+
+.span-text {
+    display  : inline-block;
+    animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(-41px);
+    }
+
+    66% {
+        transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+} */
+
+/* 2.4 grid for header text, animation and button. */
+
+.grid-main {
+    grid-area : main;
+    margin-top: 1rem;
+}
+
+/* 3. Professional Skills Style */
+.progress-container {
+    margin-bottom: 20px;
+    font-size    : 18px;
+}
+
+.progress-container .progress-bar {
+    height          : 5px;
+    transform       : scaleX(0);
+    transition      : transform 2s ease-in-out;
+    transform-origin: 0% 0%;
+}
+
+.progress-container .progress {
+    height   : 5px;
+    font-size: 18px;
+}
+
+.progress-container .aos-animate {
+    transform: scaleX(1);
+}
+
+
+/* 4. Experience Style */
+.cc-experience .cc-experience-header {
+    padding-top   : 60px;
+    padding-right : 0;
+    text-align    : center;
+    color         : var(--text);
+    text-transform: uppercase;
+}
+
+.points {
+    list-style: none;
+}
+
+.points li::before {
+    content    : "\2022";
+    color      : var(--btn-bg);
+    font-weight: 900;
+    font-size  : 1.5rem;
+    display    : inline-block;
+    width      : 1rem;
+    margin-left: -1rem;
+}
+
+/* 5. Education Style */
+.cc-education .h5 {
+    margin-bottom: 0;
+}
+
+.cc-education .cc-education-header {
+    padding-top  : 60px;
+    padding-right: 0;
+    text-align   : center;
+    color        : var(--text);
+}
+
+/* 4 & 5 Education and experience section images */
+#nsic,
+#diploma,
+#mba,
+#engg,
+#school {
+    background-size: cover;
+    font-weight    : 900;
+}
+
+#nsic {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/agumentic.png);
+}
+
+#diploma {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sjcet.jpg);
+}
+
+#mba {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/narayna.png);
+}
+
+#engg {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/narayna.png);
+}
+
+#school {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kiddys.png);
+}
+
+/* 6. Contact Information Style */
+.cc-contact-information {
+    width     : 100%;
+    position  : relative;
+    overflow  : hidden;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center / cover no-repeat url("../images/bgradient.svg");
+}
+
+.cc-contact-information .cc-contact {
+    padding: 8% 0 8% 20%;
+}
+
+@media (max-width: 767px) {
+    .cc-contact-information .cc-contact {
+        padding: 30px 0px 30px 0px;
+    }
+}
+
+/* 7. Footer */
+/* Social button style */
+.cc-linkedin:hover i {
+    color: #3b5998;
+}
+
+.cc-github:hover i {
+    color: #111;
+}
+
+.cc-whatsapp:hover i {
+    color: var(--default-color);
+}
+
+/* 8. media query */
+/* 8.1 max-width: 768px */
+@media (max-width: 768px) {
+    p {
+        padding-left: .5rem;
+    }
+}
+
+/* 8.2 max-width:991px */
+@media (max-width:991px) {
+
+    /* ----------Note ----------
+    remove this upcoming class from the div 
+    while uploading new projects....
+    */
+    .upcoming {
+        display: none;
+    }
+}
+
+/* 8.3 min-width: 768px */
+@media (min-width: 768px) {
+    hr {
+        margin: 3rem auto;
+    }
+
+    /* grid template*/
+    .page-header .container>.content-center {
+        display      : grid;
+        grid-template: auto / 30fr 70fr;
+        grid-template-areas:
+            "side main";
+        gap: 15%;
+    }
+
+    /* cutout effect for profile image */
+    .cutout-effect {
+        width    : 18rem;
+        height   : 18rem;
+        transform: rotate(45deg);
+
+    }
+
+    .cutout-effect span {
+        position           : absolute;
+        left               : 0;
+        width              : 100%;
+        height             : 5px;
+        /* background-color: var(--btn-bg); */
+        border             : 3px solid black;
+        border-image       : linear-gradient(57deg, #9861e2, #265B8B, #1DC690);
+        border-image-slice : 1;
+    }
+
+    .cutout-effect span:first-child {
+        transform          : rotate(90deg);
+        transform-origin   : 0 0;
+        /* background-color: var(--design); */
+    }
+
+    .cutout-effect span:nth-child(2) {
+        bottom             : 0;
+        z-index            : 1;
+        /* background-color: var(--dviolet); */
+
+    }
+
+    .cutout-effect span:nth-child(3) {
+        transform          : rotate(-90deg);
+        transform-origin   : 100% 0;
+        /* background-color: var(--heading-text); */
+
+    }
+
+    .cutout-effect span:nth-child(4) {
+        z-index: 1;
+    }
+
+    .cutout-effect .img-box {
+        width              : 100%;
+        height             : 100%;
+        background-image   : url("../images/samu.jpg");
+        background-size    : cover;
+        background-position: center;
+        transform          : rotate(-45deg);
+        box-shadow         : 0 0 20px rgba(0, 0, 0, 0.5);
+        border-radius      : 5px;
+    }
+
+    .cc-profile-image a {
+        display: none;
+    }
+}
+
+/* 8.4 min-width:991px */
+@media screen and (min-width:991px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .card-fold {
+        display: flex;
+    }
+
+    .card-fold .card {
+        margin: 1rem;
+    }
+}
+
+#back-to-top-btn {
+    display                   : none;
+    position                  : fixed;
+    bottom                    : 20px;
+    right                     : 20px;
+    font-size                 : 26px;
+    width                     : 50px;
+    height                    : 50px;
+    background-color          : #fff;
+    color                     : #333;
+    cursor                    : pointer;
+    outline                   : none;
+    border-radius             : 20%;
+    transition-duration       : 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property       : background-color, color;
+}
+
+#back-to-top-btn i {
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    color          : var(--btn-bg);
+}
+
+/* Animations */
+.btnEntrance {
+    animation-duration : 0.5s;
+    animation-fill-mode: both;
+    animation-name     : btnEntrance;
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
+    from {
+        opacity  : 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity  : 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.btnExit {
+    animation-duration : 0.25s;
+    animation-fill-mode: both;
+    animation-name     : btnExit;
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity  : 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+/* 9 - digital badge*/
+.slider {
+    width           : auto;
+    height          : auto;
+    max-width       : 100rem;
+    background-color: #eee;
+    border-radius   : 50px;
+    position        : relative;
+}
+
+.slides-container {
+    width : 100%;
+    height: 100%;
+}
+
+.slide {
+    width      : 100%;
+    height     : 100%;
+    align-items: center;
+    padding    : 1rem 2rem;
+    display    : none;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.slide.active .col-left,
+.slide.active .col-right {
+    animation: fade-in 0.8s 1;
+}
+
+@keyframes fade-in {
+    from {
+        opacity  : 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity  : 1;
+        transform: translateX(0);
+    }
+}
+
+.col-left,
+.col-right {
+    flex: 1;
+}
+
+.col-left h2 {
+    font-family   : "Bebas Neue", cursive;
+    font-size     : 50px;
+    margin-bottom : 20px;
+    color         : #333;
+    letter-spacing: 3px;
+}
+
+.col-left p {
+    font-family: "Poppins", sans-serif;
+    color      : #777;
+    line-height: 1.9;
+}
+
+.col-right {
+    text-align: center;
+    height    : 100%;
+}
+
+.col-right img {
+    height: 100%;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
+}
+
+
+@media (max-width: 991px) {
+
+    .slide.active {
+        display: block;
+    }
+
+    .col-right {
+        display: none;
+    }
+
+    .col-left {
+        word-break: break-word;
+    }
+
+}
