@@ -9,12 +9,18 @@
 * BOOTSTRAP
 
 
+<br>
+
 #### Agenda
 
 1. To share my details with clear information in the portfolio.
 2. Each section having particular information about a specific thing.
 3. Making end user happy with the visualization.
 4. Along with the attractiveness, website should be interactive.
+
+
+<br>
+
 
 
 #### Overview of portfolio :
@@ -26,7 +32,7 @@
 * To make the end user active curious, some styles and colors are used.
 * After watching the portfolio contacting plays a main role that's why some links are provided in the contact section to contact me.
 
-
+<br>
 
 #### Solution :
 
@@ -37,7 +43,7 @@ Before the home section a horizontal bar is present, which carries all links rel
 
  Every section is having particular information about specified thing.
 
-
+<br>
 
 #### End User Benifit :
 
@@ -46,6 +52,8 @@ Before the home section a horizontal bar is present, which carries all links rel
 2. THROUGH THE PORTFOLIO THEY CAN EASILY KNOW MYSELF AND SKILLS, THEY CAN DOWNLOAD MY RESUME FOR THE FURTHER PROCESSES.
 3. MY PROJECTS AND CERTIFICATIONS ALSO HELP FULL TO HIRE ME.
 
+
+<br>
 
 
 
@@ -58,6 +66,7 @@ Before the home section a horizontal bar is present, which carries all links rel
 * For example, If you  want to see all projects done by me you can just click on the links to navigate to specific project page.
 
 
+<br>
 
 
 
@@ -70,6 +79,9 @@ Before the home section a horizontal bar is present, which carries all links rel
 * Html is used to structure my portfolio in respective manner.
 * javascript is used to make portfolio interactive to the end user..
 
+
+
+<br>
 
 
 #### Outcomes:
@@ -117,6 +129,7 @@ click here to visit my portfolio : https://kanne-samrudhi.github.io/portfolio/
 
 
 
+<br><br><br>
 
 
 
@@ -129,7 +142,6 @@ click here to visit my portfolio : https://kanne-samrudhi.github.io/portfolio/
 
 
 
-# THANK YOU
 
 ![image](https://github.com/Kanne-Samrudhi/portfolio/assets/134263151/4aba98be-cc73-402f-a328-e750714e416b)
 
