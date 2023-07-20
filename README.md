@@ -38,8 +38,12 @@
 
 
 This is the first section in my portfolio.
-Before the home section a horizontal bar is present, which carries all links related to the sections in my portfolio.
+Before the home section a horizontal bar is present, which carries all links related to the sections in my portfolio. <br>
 ![image](https://github.com/Kanne-Samrudhi/portfolio/assets/134263151/10b72a27-1f36-4de9-bc6a-f24d78afd34a)
+
+
+<br>
+
 
  Every section is having particular information about specified thing.
 
@@ -88,11 +92,11 @@ Before the home section a horizontal bar is present, which carries all links rel
 
 * My portfolio website resulting more information with as possible as shorter space. 
 * Information provided in the portfolio will helps to make curious in recuiters.
-
+<br>
 ![image](https://github.com/Kanne-Samrudhi/portfolio/assets/134263151/1ccd51ee-c2b3-4a90-b80b-313a1724d71c)
 
 
-
+<br>
 
 
 
