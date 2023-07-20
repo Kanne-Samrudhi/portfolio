@@ -93,7 +93,7 @@ Before the home section a horizontal bar is present, which carries all links rel
 
 
 
-
+<br><br><br><br>
 
 
 
@@ -108,3 +108,28 @@ Before the home section a horizontal bar is present, which carries all links rel
 
 
 click here to visit my portfolio : https://kanne-samrudhi.github.io/portfolio/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# THANK YOU
+
+![image](https://github.com/Kanne-Samrudhi/portfolio/assets/134263151/4aba98be-cc73-402f-a328-e750714e416b)
+
