@@ -91,12 +91,14 @@ Before the home section a horizontal bar is present, which carries all links rel
 #### Outcomes:
 
 * My portfolio website resulting more information with as possible as shorter space. 
-* Information provided in the portfolio will helps to make curious in recuiters.
-<br>
+* Information provided in the portfolio will helps to make curious in recuiters. <br>
+
+
+
 ![image](https://github.com/Kanne-Samrudhi/portfolio/assets/134263151/1ccd51ee-c2b3-4a90-b80b-313a1724d71c)
 
 
-<br>
+
 
 
 
