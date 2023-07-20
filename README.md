@@ -53,9 +53,9 @@ Before the home section a horizontal bar is present, which carries all links rel
  
 
 
-• If we want to provide all information in minimum requirement is a challenging task. 
-• I have used as less space as required to time and space.So that's why I have provided brief intro to every section along with some links which will have the whole content.
-• For example, If you  want to see all projects done by me you can just click on the links to navigate to specific project page.
+* If we want to provide all information in minimum requirement is a challenging task. 
+* I have used as less space as required to time and space.So that's why I have provided brief intro to every section along with some links which will have the whole content.
+* For example, If you  want to see all projects done by me you can just click on the links to navigate to specific project page.
 
 
 
@@ -64,18 +64,18 @@ Before the home section a horizontal bar is present, which carries all links rel
 #### Technologies USed
 
 
-➤  Here I have used bootstrap, html, css, and javascript which are the main sources of my portfolio.
-➤ Bootstrap makes my portfolio responsive for all screens.
-➤ Css makes it attractive by the colors and some more effects.
-➤ Html is used to structure my portfolio in respective manner.
-➤ javascript is used to make portfolio interactive to the end user..
+*  Here I have used bootstrap, html, css, and javascript which are the main sources of my portfolio.
+* Bootstrap makes my portfolio responsive for all screens.
+* Css makes it attractive by the colors and some more effects.
+* Html is used to structure my portfolio in respective manner.
+* javascript is used to make portfolio interactive to the end user..
 
 
 
 #### Outcomes:
 
-• My portfolio website resulting more information with as possible as shorter space. 
-• Information provided in the portfolio will helps to make curious in recuiters.
+* My portfolio website resulting more information with as possible as shorter space. 
+* Information provided in the portfolio will helps to make curious in recuiters.
 
 ![image](https://github.com/Kanne-Samrudhi/portfolio/assets/134263151/1ccd51ee-c2b3-4a90-b80b-313a1724d71c)
 
