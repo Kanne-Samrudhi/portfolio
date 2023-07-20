@@ -33,7 +33,8 @@
 
 This is the first section in my portfolio.
 Before the home section a horizontal bar is present, which carries all links related to the sections in my portfolio.
-![image](https://github.com/Kanne-Samrudhi/portfolio/assets/134263151/9d79be2a-7efe-4201-a718-5f4680fae91d)
+![image](https://github.com/Kanne-Samrudhi/portfolio/assets/134263151/10b72a27-1f36-4de9-bc6a-f24d78afd34a)
+
 
 
 
